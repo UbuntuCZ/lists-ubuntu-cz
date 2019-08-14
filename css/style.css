@@ -1,0 +1,46 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 0;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+header img {
+  max-width: 2.5em;
+}
+
+main {
+  padding: 2em 0;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary h2::before {
+  display: inline;
+  padding-right: 0.5em;
+  color: black;
+}
+
+details > summary h2::before {
+  font-family: monospace;
+}
+
+details:not([open]) > summary h2::before {
+  content: '+';
+}
+
+details[open] > summary h2::before {
+  content: '−';
+}
+
+details > p {
+  padding-left: 1.5em;
+}
